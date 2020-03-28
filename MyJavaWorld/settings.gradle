@@ -1,0 +1,2 @@
+rootProject.name='My Java World'
+include ':app'
