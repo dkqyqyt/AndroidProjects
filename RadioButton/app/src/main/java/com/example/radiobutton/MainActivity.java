@@ -41,25 +41,25 @@ public class MainActivity extends AppCompatActivity {
 
         switch (id1){
             case R.id.radioButton:
-                text1.setText("라디오 버튼 1-1 이 선택되었습니다.");
+                text2.setText("라디오 버튼 1-1 이 선택되었습니다.");
                 break;
             case R.id.radioButton2:
-                text1.setText("라디오 버튼 1-2 이 선택되었습니다.");
+                text2.setText("라디오 버튼 1-2 이 선택되었습니다.");
                 break;
             case R.id.radioButton3:
-                text1.setText("라디오 버튼 1-3 이 선택되었습니다.");
+                text2.setText("라디오 버튼 1-3 이 선택되었습니다.");
                 break;
         }
 
         switch (id2){
             case R.id.radioButton4:
-                text2.setText("라디오 버튼 2-1 이 선택되었습니다.");
+                text1.setText("라디오 버튼 2-1 이 선택되었습니다.");
                 break;
             case R.id.radioButton5:
-                text2.setText("라디오 버튼 2-2 이 선택되었습니다.");
+                text1.setText("라디오 버튼 2-2 이 선택되었습니다.");
                 break;
             case R.id.radioButton6:
-                text2.setText("라디오 버튼 2-3 이 선택되었습니다.");
+                text1.setText("라디오 버튼 2-3 이 선택되었습니다.");
                 break;
         }
     }
