@@ -22,6 +22,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <RadioGroup
+        android:id="@+id/group1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -49,6 +50,7 @@
     </RadioGroup>
 
     <RadioGroup
+        android:id="@+id/group2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -81,4 +83,11 @@
         android:layout_height="wrap_content"
         android:onClick="btn1Method"
         android:text="라디오 체크하기" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn2Method"
+        android:text="체크 상태 확인하기" />
 </LinearLayout>
