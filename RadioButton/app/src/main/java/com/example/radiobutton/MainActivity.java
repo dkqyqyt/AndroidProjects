@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
         group1 = (RadioGroup) findViewById(R.id.group1);
         group2 = (RadioGroup) findViewById(R.id.group2);
 
+        // 라디오 그룹에 리스터를 설정한다.
+        RadioListener listener = new RadioListener();
+        group1.setOnCheckedChangeListener(listener);
+        group2.setOnCheckedChangeListener(listener);
     }
 
     public void btn1Method(View view){
@@ -61,6 +65,43 @@ public class MainActivity extends AppCompatActivity {
             case R.id.radioButton6:
                 text1.setText("라디오 버튼 2-3 이 선택되었습니다.");
                 break;
+        }
+    }
+
+    class RadioListener implements RadioGroup.OnCheckedChangeListener{
+        @Override
+        public void onCheckedChanged(RadioGroup group, int checkedId) {
+            // 체크 상태가 변경된 라디오 그룹의 아이디를 추출한다.
+            int id = group.getId();
+
+            switch(id){
+                case R.id.group1:
+                    switch(checkedId){
+                        case R.id.radioButton:
+                            text2.setText("라디오 버튼 이벤트 : 1-1");
+                            break;
+                        case R.id.radioButton2:
+                            text2.setText("라디오 버튼 이벤트 : 1-2");
+                            break;
+                        case R.id.radioButton3:
+                            text2.setText("라디오 버튼 이벤트 : 1-3");
+                            break;
+                    }
+                    break;
+                case R.id.group2:
+                    switch(checkedId){
+                        case R.id.radioButton4:
+                            text1.setText("라디오 버튼 이벤트 : 2-1");
+                            break;
+                        case R.id.radioButton5:
+                            text1.setText("라디오 버튼 이벤트 : 2-2");
+                            break;
+                        case R.id.radioButton6:
+                            text1.setText("라디오 버튼 이벤트 : 3-3");
+                            break;
+                    }
+                    break;
+            }
         }
     }
 }
