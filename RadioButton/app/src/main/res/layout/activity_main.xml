@@ -27,21 +27,21 @@
 
         <RadioButton
             android:id="@+id/radioButton"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="라디오 1-1" />
 
         <RadioButton
             android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="라디오 1-2" />
 
         <RadioButton
             android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="라디오 1-3" />
     </RadioGroup>
 
     <RadioGroup
@@ -50,20 +50,20 @@
 
         <RadioButton
             android:id="@+id/radioButton4"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="라디오 2-1" />
 
         <RadioButton
             android:id="@+id/radioButton5"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="라디오 2-2" />
 
         <RadioButton
             android:id="@+id/radioButton6"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="라디오 2-3" />
     </RadioGroup>
 </LinearLayout>
