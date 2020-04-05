@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
         EnterListener listener = new EnterListener();
         edit1.setOnEditorActionListener(listener);
+
+        WatcherClass watcher = new WatcherClass();
+        edit1.addTextChangedListener(watcher);
     }
 
     public void btn1Method(View view){
@@ -48,4 +51,23 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    class WatcherClass implements TextWatcher{
+        @Override
+        // 문자열 값이 변경되었을 때
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+            text1.setText("문자열 변경 중 : " + s);
+        }
+
+        // 문자열 값이 변경되기 전
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        // 문자열 값이 변경된 이후
+        @Override
+        public void afterTextChanged(Editable s) {
+
+        }
+    }
 }
